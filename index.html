@@ -23,19 +23,42 @@
             
             <div id="form-area">
                 <h1>Let's do this!</h1>
-                <form action="/index.html" method="get"></form>
-                <p class="input">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="fname"  value="Thor">
-                </p>
-                <p class="input">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </p>
-                <p class="input">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                </p>
+                <form action="index.html" method="get" name="create-account">
+                    <div class="left-right">
+                        <div class="left">
+                            <p class="input">
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" id="fname" name="fname" >
+                            </p>
+                            <p class="input">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </p>
+                            <p class="input">
+                                <label for="password">PASSWORD</label>
+                                <input minlength="8" type="password" name="password" id="password">
+                            </p>
+                        </div>
+                        <div class="right">
+                            <p class="input">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="lname" name="lname">
+                            </p>
+                            <p class="input">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="phone">
+                            </p>
+                            <p class="input">
+                                <label for="confirmed-password">CONFIRM PASSWORD</label>
+                                <input minlength="8" type="password" id="confirmed-password" name="cpassword">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <button id="create" type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                </form>
+            </div>
             </div>
         </main>
     </div>
